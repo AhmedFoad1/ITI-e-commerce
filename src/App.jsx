@@ -16,22 +16,18 @@ function App() {
 
   return(
    
-<>
- 
-<NavBar>
-
-</NavBar>
-
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path='/detail/:id' element={<ProductDetails/>}/>
-      <Route path="/About" element={<About/>}/>
-      <Route path='/Sign-Up' element={<SignUp/>}/>
-      <Route path="*" element={<PageNotFound />} />
-    
-    </Routes>
-  
-</>
-)}
+    <div className="flex flex-col min-h-screen">
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path='/detail/:id' element={<ProductDetails/>}/>
+        <Route path="/About" element={<About/>}/>
+        <Route path='/Sign-Up' element={<SignUp/>}/>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </div>
+  )
+}
 //search not-found page
 export default App
+
