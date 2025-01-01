@@ -85,6 +85,8 @@ function Login() {
                         value={formData.password}
                         onChange={handleChange}
                         className="border border-gray-300 rounded-lg w-full px-3 py-2 mt-1"
+                        // The password field should be a password input type
+                        // and should have the same styling as the email field
                     />
                     {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
                 </div>
