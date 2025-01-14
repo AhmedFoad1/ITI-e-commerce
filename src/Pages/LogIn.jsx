@@ -41,13 +41,8 @@ function Login() {
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
         } else {
-            const validUser = true; // Replace with real authentication logic
-            if (validUser) {
-                dispatch(authActions.login({ email: formData.email }));
-                navigate('/');
-            } else {
-                setErrors({ form: 'Invalid email or password' });
-            }
+            dispatch(authActions.login({ email: formData.email }));
+            navigate('/');
         }
     };
 
