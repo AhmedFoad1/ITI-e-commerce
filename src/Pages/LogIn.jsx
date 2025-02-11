@@ -69,6 +69,7 @@ function Login() {
                         value={formData.email}
                         onChange={handleChange}
                         className="border border-gray-300 rounded-lg w-full px-3 py-2"
+                        required
                     />
                     {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                 </div>
@@ -84,6 +85,7 @@ function Login() {
                         value={formData.password}
                         onChange={handleChange}
                         className="border border-gray-300 rounded-lg w-full px-3 py-2"
+                        required
                     />
                     {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
                 </div>
